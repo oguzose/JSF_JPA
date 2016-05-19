@@ -23,13 +23,16 @@
 <!-- 				<p:messages id="messages" /> -->
 				<h:panelGrid columns="2" cellpadding="5">
 					<p:outputLabel for="text1" value="Kullanici Adi:" />
+						
 						<p:inputText id="text1"
-							required="true" label="Firstname">
+							required="true" label="Firstname" value="#{loginBean.user}" >
 							<f:validateLength minimum="4" maximum="12" />
-						</p:inputText>						
+						</p:inputText>
+												
 					<p:outputLabel for="password" value="Password:" />
-	    			<p:password id="password" />
-					<h:commandButton value="submit"/>
+	    			<p:password id="password" value="#{loginBean.password}" />
+					
+					<h:commandButton value="submit" action="#{loginBean.K_user}"/>
 				</h:panelGrid>
 				<p:message for="text1" display="ohaaa" />
 				
