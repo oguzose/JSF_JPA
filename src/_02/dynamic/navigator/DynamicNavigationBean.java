@@ -17,7 +17,7 @@ public class DynamicNavigationBean {
 
 	public String login() {
 
-		if ("oguz".equals(name) && "java".equals(password)) {
+		if ("admin".equals(name) && "java".equals(password)) {
 			counter = 0;
 			locked = false;
 			return "success";

@@ -33,7 +33,7 @@
 			</p:column>
 
 			<p:column headerText="Delete">
-				<p:commandButton value="Kayıtı Sil"
+				<p:commandButton value="Kayıtı Sil" ajax="false"
 					actionListener="#{employeeController.deleteEmployee(myEmployee.id)}"
 					icon="ui-icon-disk" />
 			</p:column>
@@ -54,9 +54,9 @@
 			<h:commandButton value="O ile baslayanlar"
 				action="#{employeeController.maxiEmployee}" />
 		</p>
-		<h:inputText value="#{employeeController.empid}" />
+		<p:inputText value="#{employeeController.empid}"  placeholder="fill" />
 		<p>
-			<h:commandButton value="yukari id"
+			<h:commandButton value="yukariki id'li calisani getir"
 				action="#{employeeController.aEmp}" />
 		</p>
 		

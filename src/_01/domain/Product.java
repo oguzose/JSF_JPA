@@ -26,7 +26,7 @@ public class Product {
 //	// tek bir @ManyToOne varsa bu durumda iliski unidirectional ManyToOne
 	private int cid;
 	// Employee HAS-A Department
-		
+	
 
 	public int getPid() {
 		return pid;

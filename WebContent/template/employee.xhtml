@@ -32,7 +32,7 @@
 			</p:column>
 
 			<p:column headerText="Delete">
-				<p:commandButton value="Kaydı Sil"
+				<p:commandButton value="Kaydı Sil" ajax="false"
 					actionListener="#{employeeController.deleteEmployee(myEmployee.id)}"
 					icon="ui-icon-disk" />
 			</p:column>
@@ -57,7 +57,7 @@
 		</table>
 
 		<p>
-			<h:commandButton value="Add"
+			<h:commandButton value="Add" ajax="false"
 				action="#{employeeController.addEmployee}" />
 		</p>
 
